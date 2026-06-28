@@ -1,5 +1,21 @@
-# Student Management System
-Import database.sql into MySQL.
-Update DBConnection.java with your MySQL password.
-Add mysql-connector-j.jar to the project libraries.
-Compile and run Main.java.
+# My Profile
+
+## Name
+Omkar Abhang
+
+## Course
+B.Tech Computer Science and Engineering
+
+## Skill Set
+- Java
+- Python
+- HTML
+- CSS
+- JavaScript
+- React
+- Django
+- MySQL
+- Git & GitHub
+
+## Career Goal
+To become a Java Full Stack Developer and build innovative software solutions.
