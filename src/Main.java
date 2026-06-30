@@ -4,9 +4,8 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Scanner sc = new Scanner(System.in);
-        StudentDAO dao = new StudentDAO();
-
+       Scanner sc = new Scanner(System.in);
+       FileManager file = new FileManager();
         while (true) {
 
             System.out.println("\n====================================");
@@ -45,7 +44,7 @@ public class Main {
 
                     Student student = new Student(name, age, course, email);
 
-                    dao.addStudent(student);
+                    file.addStudent(student);
 
                     break;
 
@@ -54,9 +53,9 @@ public class Main {
 
                     System.out.println("\n===== Student List =====");
 
-                    dao.viewStudents();
+                    file.viewStudents();
 
-                    break;
+                    break; 
 
                 // ---------------- SEARCH STUDENT ----------------
                 case 3:
@@ -65,7 +64,7 @@ public class Main {
 
                     int searchId = sc.nextInt();
 
-                    dao.searchStudent(searchId);
+                    file.searchStudent(searchId);
 
                     break;
 
@@ -89,8 +88,7 @@ public class Main {
                     System.out.print("Enter New Email: ");
                     String newEmail = sc.nextLine();
 
-                    dao.updateStudent(updateId, newName, newAge, newCourse, newEmail);
-
+                    file.updateStudent(updateId, newName, newAge, newCourse, newEmail);
                     break;
 
                 // ---------------- DELETE STUDENT ----------------
@@ -100,8 +98,7 @@ public class Main {
 
                     int deleteId = sc.nextInt();
 
-                    dao.deleteStudent(deleteId);
-
+                    file.deleteStudent(deleteId);
                     break;
 
                 // ---------------- EXIT ----------------
